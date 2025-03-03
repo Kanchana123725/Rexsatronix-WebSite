@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.sub_heading{
+    text-align: center;
+    margin-top: 20%;
+}
+
+#Projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+.abcd{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.items-links{
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.item-link{
+    border: 2px solid #007bff;
+    padding: 5px 10px;
+    font: 16px Roboto, Sans-serif;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.item-link:hover{
+    background: #007bff;
+    color: white;
+}
+.menu-active{
+    background: #007bff;
+    color: white;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.project-data{
+    border-radius: 20px;
+    position: relative;
+}
+.project-data:hover .overlay{
+    height: 100%;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3A3DEEA6;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay .text{
+    color: #fff;
+    padding-top: 45%;
+    padding-left: 10%;
+    font: 16px Roboto, Sans-serif;
+
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+

@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.heading{
+    color: #2124B1;
+    text-align: center;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+.blog_content{
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #666;
+
+}
+

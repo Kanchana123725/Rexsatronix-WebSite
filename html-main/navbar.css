@@ -1,0 +1,28 @@
+nav {
+    position: sticky;
+    top: 0;           
+    background-color: cornflowerblue;        
+    
+}
+.navbar a{
+    padding: 14px 16px;
+    float: left;
+    font-size: 17px;
+    text-decoration: none;
+}
+    
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 70px;
+    padding:10px;
+    justify-content: flex-end;
+}
+
+.main-Container{
+    padding-left: 40px;
+      /* display: flex; */
+}
+
+

@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+    font: 29.89 Roboto, Sans-serif;
+}
+h6{
+    text-align: center;
+    color: #2124b1;
+    font: 16px Roboto, Sans-serif;
+
+}
+h2{
+    text-align: center;
+    font: 25.934px Roboto, Sans-serif;
+}
+
+
+.contact-form{
+    max-width: 500px;
+    margin: 20px auto;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.col{
+    display: flex;
+    justify-content: row;
+    width: 100%;
+    gap: 25px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+.contact-form button{
+    width: 108%;
+    padding: 20px;
+    background-color: #2124b1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #0044cc;
+}
+
+.mainInput{
+    display: flex;
+    justify-content: space-between;
+}

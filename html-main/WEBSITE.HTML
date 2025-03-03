@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="About.html"> About </a>
+    <a href="home.html">Google Maps</a><br>
+    <a href="P&S.html">Animated Buttons</a><br>
+    <a href="navbar.html">Modal Boxes</a><br>
+    <a href="contact.html">Animations</a><br>
+    <a href="Blog.html">Progress Bars</a><br>
+
+
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain attribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;
+            }
+          }
+        };
+        </script>
+        
+        <body>
+        
+        <div w3-include-html="content.html"></div> 
+        
+        <script>
+        includeHTML();
+        </script>
+        
+        </body>
+        <script>
+        function loadHTML() {
+            fetch('home.html')
+                .then(response => response.text())
+                .then(text => document.getElementById('homePage').innerHTML = text);
+          }
+        </script>
+
+</body>
+</html>
