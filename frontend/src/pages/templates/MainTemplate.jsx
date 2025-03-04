@@ -1,13 +1,11 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
+import NavBar from "../../components/navBar/NavBar";
 
 const MainTemplate = () => {
   return (
-    <div className="bg-[#f3f6ff] w-full">
-      <div className="max-w-[1400px] m-auto">
-        <nav className="bg-white"> test</nav>
-        <Outlet />
-      </div>
+    <div className="container-xxl p-0">
+      <NavBar />
+      <Outlet />
     </div>
   );
 };
