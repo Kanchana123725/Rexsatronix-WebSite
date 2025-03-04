@@ -3,10 +3,13 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./index.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS (for components like modals, tooltips)
+import { Provider } from "react-redux";
+import { store } from "./redux/store.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </StrictMode>
 );

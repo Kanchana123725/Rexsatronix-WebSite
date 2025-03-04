@@ -30,6 +30,11 @@ body {
   background-color: white;
 }
 
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px; /* Scrollbar width */
