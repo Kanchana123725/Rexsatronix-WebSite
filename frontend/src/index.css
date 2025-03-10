@@ -3,9 +3,9 @@
 :root {
   --primary: #4777f5;
   --secondary: #2125b1;
+  --active: #2126b193;
   --light: #f7faff;
   --dark: #1d1d27;
-  --bs-body-bg: var(--light);
 }
 
 body {
@@ -33,6 +33,10 @@ body {
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+
+a {
+  all: unset; /* Resets everything */
 }
 
 /* Scrollbar styles */

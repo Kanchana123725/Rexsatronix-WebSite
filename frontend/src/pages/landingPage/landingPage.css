@@ -1,0 +1,45 @@
+.hero-header {
+  background: url(/image/bg-dot.png), url(/image/bg-dot.png),
+    url(/image/bg-round.png), url(/image/bg-tree.png),
+    url(../image/bg-bottom-hero.png);
+  background-position: 10px 10px, bottom 190px right 10px, left 55% top -1px,
+    left 45% bottom -1px, center bottom -1px;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+}
+
+.bg-color {
+  background-color: #4777f5;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.custom-letter-spacing {
+  letter-spacing: 1.5px;
+}
+
+.main-description {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.subheading-text {
+  padding-bottom: 40px;
+  font-style: italic;
+}
