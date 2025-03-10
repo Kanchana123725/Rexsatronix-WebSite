@@ -1,7 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import languages from "../utils/language.json";
 
-const initialState = {
+type LanguageKeys = keyof typeof languages;
+type LanguageData = (typeof languages)[LanguageKeys];
+
+interface LanguageState {
+  selectedLang: LanguageData;
+}
+
+const initialState: LanguageState = {
   selectedLang: languages.english,
 };
 
@@ -9,7 +16,7 @@ const languageSlice = createSlice({
   name: "language",
   initialState,
   reducers: {
-    setLanguage: (state, action) => {
+    setLanguage: (state, action: PayloadAction<LanguageKeys>) => {
       state.selectedLang = languages[action.payload];
     },
   },

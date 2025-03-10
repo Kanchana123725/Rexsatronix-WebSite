@@ -6,3 +6,5 @@ export const store = configureStore({
     language: languageReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;

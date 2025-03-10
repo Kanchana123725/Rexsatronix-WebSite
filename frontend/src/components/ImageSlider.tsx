@@ -1,11 +1,19 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, CSSProperties } from "react";
 import { Box, IconButton } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
-const ImageSlider = ({ images = [], interval = 2500 }) => {
+type ImageSliderProps = {
+  images: string[];
+  interval?: number;
+};
+
+const ImageSlider: React.FC<ImageSliderProps> = ({
+  images = [],
+  interval = 3000,
+}) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -71,7 +79,7 @@ const ImageSlider = ({ images = [], interval = 2500 }) => {
 };
 
 /* Styles */
-const imageStyle = {
+const imageStyle: CSSProperties = {
   position: "absolute",
   width: "100%",
   height: "100%",
@@ -79,7 +87,7 @@ const imageStyle = {
   borderRadius: 8,
 };
 
-const navButtonStyle = (position) => ({
+const navButtonStyle = (position: "left" | "right"): CSSProperties => ({
   position: "absolute",
   top: "50%",
   [position]: 10,

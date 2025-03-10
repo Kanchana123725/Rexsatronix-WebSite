@@ -1,4 +1,4 @@
-import ImageSlider from "../../components/imageSlider";
+import ImageSlider from "../../components/ImageSlider";
 import "./LandingPage.css";
 const LandingPage = () => {
   const images = [
@@ -14,7 +14,7 @@ const LandingPage = () => {
         <div className="container my-5 py-5 px-lg-5">
           <div className="row g-5 py-5 d-lg-flex ">
             {/* have change flex direction */}
-            <div className="col-12 col-lg-7 text-center text-lg-start">
+            <div className="col-12 col-lg-6 text-center text-lg-start">
               <h1 className="text-white mb-2 animated zoomIn fw-bold custom-letter-spacing">
                 Quality, Intelligent &amp; Creative Solutions
               </h1>
@@ -32,7 +32,7 @@ const LandingPage = () => {
                 overall productivity and elevate their journey of automation.
               </p>
             </div>
-            <div className="col-12 col-lg-5">
+            <div className="col-12 col-lg-6">
               <ImageSlider images={images} />
             </div>
           </div>

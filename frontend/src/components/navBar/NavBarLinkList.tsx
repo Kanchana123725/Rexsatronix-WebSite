@@ -1,8 +1,11 @@
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { RootState } from "../../redux/store";
 
-const NavBarLinkList = ({ type }) => {
-  const languageObject = useSelector((state) => state.language.selectedLang);
+const NavBarLinkList = ({ type }: { type: string }) => {
+  const languageObject = useSelector(
+    (state: RootState) => state.language.selectedLang
+  );
   const isMainNav = type === "mainNav";
   return (
     <div className={`navbar-collapse ${isMainNav && "d-flex"}`}>

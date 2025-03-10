@@ -8,6 +8,12 @@
   padding-bottom: 300px;
 }
 
+.hero-header::after {
+  content: "";
+  display: block;
+  margin-top: 200px;
+}
+
 .bg-color {
   background-color: #4777f5;
 }
