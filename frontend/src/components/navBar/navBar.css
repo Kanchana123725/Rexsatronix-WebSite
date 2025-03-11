@@ -51,6 +51,7 @@ nav-item-link:active {
   max-height: 50px;
   max-width: 250px;
   position: relative;
+  cursor: pointer;
 }
 
 .logo {

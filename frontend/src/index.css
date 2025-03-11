@@ -4,7 +4,7 @@
   --primary: #4777f5;
   --secondary: #2125b1;
   --active: #2126b193;
-  --light: #f7faff;
+  --light: #f8f8f88a;
   --dark: #1d1d27;
 }
 
@@ -19,6 +19,10 @@ body {
   background-color: #f3f6ff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important; /* Your custom color */
 }
 
 .content-wrapper {
@@ -51,4 +55,30 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--primary) !important;
   border-radius: 3px !important;
+}
+
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1450px !important;
+  }
+}
+
+.readme-btn {
+  background-color: var(--primary);
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 100vh;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+  margin-inline: auto;
+  display: block;
+}
+
+.readme-btn:hover {
+  border: 1px solid rgb(99, 90, 121);
+}
+
+.readme-btn:active {
+  background-color: var(--active);
 }
