@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback, CSSProperties } from "react";
-import { Box, IconButton } from "@mui/material";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-// eslint-disable-next-line no-unused-vars
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { Box } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 type ImageSliderProps = {
   images: string[];
@@ -14,29 +14,6 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
   images = [],
   interval = 3000,
 }) => {
-  const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
-
-  const handlePrev = () => {
-    setDirection(1);
-    setIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = useCallback(() => {
-    setDirection(-1);
-    setIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  }, [setDirection, setIndex, images]);
-
-  // Auto-slide effect
-  useEffect(() => {
-    const timer = setTimeout(handleNext, interval);
-    return () => clearTimeout(timer);
-  }, [index, interval, handleNext]);
-
   return (
     <Box
       position="relative"
@@ -47,52 +24,32 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
       bgcolor="white"
       sx={{ borderRadius: 4 }}
     >
-      <Box position="relative" width="100%" height={400}>
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={index}
-            src={images[index]}
-            alt={`Slide ${index + 1}`}
-            initial={{ x: direction * 100 + "%", opacity: 0 }}
-            animate={{ x: "0%", opacity: 1 }}
-            exit={{
-              x: -direction * 100 + "%",
-              opacity: 0,
-              position: "absolute",
-            }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            style={imageStyle}
-          />
-        </AnimatePresence>
-      </Box>
-
-      {/* Navigation Buttons */}
-      <IconButton onClick={handlePrev} sx={navButtonStyle("left")}>
-        <ArrowBackIosNewIcon />
-      </IconButton>
-
-      <IconButton onClick={handleNext} sx={navButtonStyle("right")}>
-        <ArrowForwardIosIcon />
-      </IconButton>
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        spaceBetween={10}
+        slidesPerView={1}
+        autoplay={{ delay: interval, disableOnInteraction: false }}
+        loop
+        navigation
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <Box
+              component="img"
+              src={image}
+              alt={`Slide ${index + 1}`}
+              sx={{
+                width: "100%",
+                height: 400,
+                objectFit: "cover",
+                borderRadius: 2,
+              }}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Box>
   );
 };
-
-/* Styles */
-const imageStyle: CSSProperties = {
-  position: "absolute",
-  width: "100%",
-  height: "100%",
-  objectFit: "cover",
-  borderRadius: 8,
-};
-
-const navButtonStyle = (position: "left" | "right"): CSSProperties => ({
-  position: "absolute",
-  top: "50%",
-  [position]: 10,
-  transform: "translateY(-50%)",
-  color: "gray",
-});
 
 export default ImageSlider;

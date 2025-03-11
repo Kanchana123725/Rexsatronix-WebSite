@@ -80,7 +80,7 @@ const LandingPage = () => {
                 overall productivity and elevate their journey of automation.
               </p>
             </div>
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 ">
               <ImageSlider images={images} />
             </div>
           </div>
@@ -107,7 +107,7 @@ const LandingPage = () => {
             Dedicated to revolutionizing the electronic manufacturing industry.
           </p>
         </div>
-        <div className="mt-5">
+        <div className="p-5">
           <ProductInfoCard cards={cards} withAnimation={false} />
         </div>
         <Link to={"/about"} className="readme-btn-wrapper">
