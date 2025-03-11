@@ -1,0 +1,41 @@
+.title{
+    text-align: center;
+    margin-top: 130px;
+    
+}
+
+.main-content{
+    text-align: center;
+    padding-top: 150px;
+    
+    
+}
+.h1{
+    color: #2124b1;
+}
+.paragraph{
+    padding-right: 100px;
+    padding-left: 100px;
+    color: #888;
+    font-family: "Heebo", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-top: 80px; 
+    }
+
+    .main-content {
+        padding-top: 80px; 
+      
+    }
+
+    .paragraph {
+        padding-right: 20px; 
+        padding-left: 20px;  
+    }
+
+    .h1 {
+        font-size: 24px; 
+    }
+}
