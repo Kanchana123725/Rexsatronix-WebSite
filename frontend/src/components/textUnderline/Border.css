@@ -1,0 +1,20 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #1a1a22; /* Black underline */
+    color: #1a1a22; /* Black text */
+    font-size: 16px;
+  }
+  
+  .square {
+    width: 10px;
+    height: 10px;
+    background-color: #1a1a22; /* Black square */
+    margin-left: 8px;
+  }
+  

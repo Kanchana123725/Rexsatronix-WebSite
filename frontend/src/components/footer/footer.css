@@ -1,0 +1,169 @@
+.footer {
+  background-image: url('/images/footer.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: #4777F5;
+  color: #F7FAFF;
+  padding: 2px 100px;
+  font-family: "Heebo", sans-serif;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+/*address section*/
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imageTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Phone{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Phone img{
+  width: 25px;
+  height: 25px;
+}
+.imageTag img {
+  width: 16px;
+  height: 16px;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: 16px auto; /* First column for icon, second for text */
+  gap: 10px;
+  align-items: flex-start; /* Align the icon at the top */
+}
+
+.address img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain; /* Ensure the icon scales properly */
+}
+
+.address span {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 25px;
+}
+
+
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Space between images */
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.gallery-container img {
+  width: calc(33.33% - 10px); /* Divide into three columns and account for the gap */
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Language Section */
+.language-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Language Heading */
+.language-section__heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Language Flags Container */
+.language-section__flags {
+  display: flex;
+  gap: 12px;
+}
+
+/* Individual Flag Wrapper */
+.language-section__flag-wrapper {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Adjust the border color and width as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.language-section__flag-wrapper:hover {
+  background-color: #F7FAFF;
+}
+
+/* Flag Styling */
+.language-section__flag {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+/* Footer Copyright */
+.footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+  padding: 25px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Mission Section */
+p.Mission {
+  line-height: 1.5;
+  width: 230px;
+  margin-top: 25px;
+}
+
+/* Popular Links */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-item img {
+  width: 10px;
+  height: 10px;
+}
+

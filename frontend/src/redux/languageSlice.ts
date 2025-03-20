@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import languages from "../utils/language.json";
 
-type LanguageKeys = keyof typeof languages;
-type LanguageData = (typeof languages)[LanguageKeys];
+export type LanguageKeys = keyof typeof languages;
+export type LanguageData = (typeof languages)[LanguageKeys];
 
 interface LanguageState {
   selectedLang: LanguageData;

@@ -1,0 +1,16 @@
+.content{
+    display: grid;
+    max-width: 100%;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+.title{
+    margin-top: 180px;
+    color: #2124b1;
+
+}
+.Sub_heading{
+    color: #1d1d27;
+}

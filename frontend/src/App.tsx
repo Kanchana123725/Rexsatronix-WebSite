@@ -17,7 +17,7 @@ import Contact from "./pages/contact/Contact";
 
 const routes = createRoutesFromElements(
   <Route path="/" element={<MainTemplate />}>
-    <Route path="/" element={<LandingPage />} />
+    <Route index element={<LandingPage />} />
     <Route path="/about" element={<AboutUs />} />
     <Route path="/products" element={<Products />} />
     <Route path="/gallery" element={<Gallery />} />
