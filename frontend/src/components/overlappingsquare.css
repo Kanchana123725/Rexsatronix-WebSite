@@ -1,0 +1,33 @@
+
+.outer-square {
+  width: 10px;
+  height: 10px;
+  background: rgba(33, 66, 177, 0.5);
+  margin-left: 550px;
+  
+ }
+
+.inner-square {
+  width: 10px;
+  height: 10px;
+  background: rgba(33, 66, 177, 0.5);
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+ 
+ }
+
+
+ .services-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  justify-content: center;
+  color: #2124b1;
+  /* margin-right: 550px; */
+ 
+ }
+
+  
+
+  

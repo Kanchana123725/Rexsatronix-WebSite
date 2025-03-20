@@ -1,13 +1,10 @@
 .title{
     text-align: center;
-    margin-top: 130px;
-    
+    padding: 180px;
 }
 
 .main-content{
     text-align: center;
-    padding-top: 150px;
-    
     
 }
 .h1{
@@ -18,7 +15,28 @@
     padding-left: 100px;
     color: #888;
     font-family: "Heebo", sans-serif;
+    padding-bottom: 500px;
 }
+.head {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-right: 1000px;
+    color: #2124b1;
+   }
+   .inner-square .h4{
+    width: 10px;
+    height: 10px;
+    background: rgba(33, 66, 177, 0.5);
+    top: 10px;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    }
+    .square1 .h4{
+        width: 10px;
+        height: 10px;
+        background: rgba(33, 66, 177, 0.5);
+        }
 
 @media (max-width: 768px) {
     .title {

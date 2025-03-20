@@ -19,8 +19,12 @@ const BlogPost: React.FC = () => {
           In the rapidly evolving landscape of electronic manufacturing services (EMS), the integration of automation technologies has emerged as a transformative solution to significantly enhance shop floor efficiency and productivity. This strategic implementation of automation not only streamlines production processes but also empowers manufacturers to meet escalating demands, reduce operational costs, and ensure consistent product quality. This section delves into the pivotal role of automation in the EMS sector, highlighting its benefits, challenges, and potential future developments.
         </p>
 
-        <div className="h1">
-          <h4>Benefits of Automation in EMS:</h4>
+        <div className="head">
+        <div className="square1">
+        <div className="inner-square">
+        </div>
+        </div> 
+        <h6>BenefitsofAutomationinEMS:</h6>
         </div>
 
         <ul>
@@ -41,8 +45,12 @@ const BlogPost: React.FC = () => {
           </li>
         </ul>
 
-        <div className="h1">
-          <h4>Challenges and Considerations:</h4>
+        <div className="head">
+        <div className="square1">
+        <div className="inner-square">
+        </div>
+        </div> 
+          <h6>ChallengesandConsiderations:</h6>
         </div>
 
         <ul>
