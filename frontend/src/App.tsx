@@ -10,7 +10,7 @@ import MainTemplate from "./templates/MainTemplate";
 // page import
 import LandingPage from "./pages/landingPage/LandingPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
-import Products from "./pages/products/Products";
+import { App as Products } from "./pages/products/Products";
 import Gallery from "./pages/gallery/Gallery";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";

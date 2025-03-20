@@ -1,0 +1,36 @@
+/* App.css */
+
+/* Title Section */
+.title {
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    padding-top: 150px;
+}
+
+/* Text Section */
+.text {
+    padding-right: 100px;
+    padding-left: 100px;
+    color: #888;
+    font-family: "Heebo", sans-serif;
+}
+
+/* Styling for the "Our Services" section */
+.services-header {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+    gap: 15px;
+    justify-content: center;
+    color: #2124b1;
+}
+
+.color {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+    gap: 15px;
+    color: #2124b1;
+}

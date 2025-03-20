@@ -19,6 +19,9 @@
     "@mui/material": "^6.4.6",
     "@reduxjs/toolkit": "^2.6.0",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^12.4.10",
+    "joi": "^17.13.3",
+    "jspdf": "^3.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
@@ -35,6 +38,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "joi-to-typescript": "^4.15.0",
     "typescript": "^5.8.2",
     "vite": "^6.2.0"
   }

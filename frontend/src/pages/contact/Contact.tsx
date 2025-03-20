@@ -10,7 +10,8 @@
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './contact.css';
-// import './contact.css';
+import OverlappingSquare from '../../components/overlappingsquare';
+
 
 interface FormData {
   name: string;
@@ -52,8 +53,15 @@ const ContactUs: React.FC = () => {
       <h1>Contact Us</h1>
       </div>
       <section className="contact-section">
-        <h6>Contact Us</h6>
+      <div style={{display:'flex',gap:'10px', marginLeft:'25px'}}>
+        <OverlappingSquare/>
+          <h6 style={{marginTop:'10px'}}>Contact Us</h6>
+        </div>
+      
+      
         <h2>Contact For Any Query</h2>
+        
+        
         <div className="contact-form">
           <form onSubmit={handleSubmit}>
             <div className="mainInput">

@@ -1,14 +1,14 @@
-.heading
-{
+.heading{
     text-align: center;
-    padding-top: 200px;
-    font: 29.89 Roboto, Sans-serif;
+    padding: 180px;
+    
 }
-h6{
+ h6{
     text-align: center;
     color: #2124b1;
     font: 16px Roboto, Sans-serif;
-    padding-top:300px;
+    /* margin-left: 20px; */
+    
 }
 h2{
     text-align: center;
@@ -17,8 +17,7 @@ h2{
 }
 .contact-form{
     max-width:500px;
-   
-    margin: 20px auto;
+   margin: 20px auto;
 }
 .contact-form input,
 .contact-form textarea{
@@ -55,6 +54,24 @@ h2{
     display: flex;
     justify-content: space-between;
 } 
+/* .square .contact-section .h6::after {
+    top: 5px;
+    left: 3px;
+  } */
+/* .square {
+    width: 10px;
+    height: 10px;
+    background: rgba(33, 66, 177, 0.5);
+   
+  } */
+  /* .wert {
+    width: 10px;
+    height: 10px;
+    background-color: coral;
+  } */
+
+
+  
 
  @media (max-width: 768px) {
   

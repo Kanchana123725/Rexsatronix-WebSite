@@ -14,7 +14,7 @@ function initializeSlider(){
   }
 }
 function showSlide(index){
-
+j
   if(index >= slides.length){
     slideIndex = 0;
   }
